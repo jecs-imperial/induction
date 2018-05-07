@@ -12,7 +12,7 @@ So the axiom of induction *rules out* the pathological natural numbers. You can 
 
 Here is the axiom of induction defined formally:
 \[
-\frac{\rho\vdash{R::P(0)}\;\;\sigma\vdash{S::P(k)\to{P(s(k)}})}{\tau(n)\vdash{R(n)::P(n)}}\quad\quad{0,k,n:\mathbb{N}}
+\frac{\rho\vdash{R::P(0)}\;\;\sigma\vdash{S::P(k)\to{P(k+1)}})}{\tau(n)\vdash{R(n)::P(n)}}\quad\quad{0,k,n:\mathbb{N}}
 \]
 This may not at first sight appear to be the same as the plain English definition, admittedly the plain English definition makes no mention of what appears to be a predicate, for example. But for all intents and purposes the two definitions can be considered to amount to the same thing. 
 
