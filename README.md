@@ -2,9 +2,18 @@
 
 A derivation of the axiom of induction for the [Occam](http://djalbat.com/occam) proof assistant.
 
-![Domino effect][domino_effect]
+<style scoped> 
+img.domino-effect {
+  width: 40rem;
+  height: auto;
+}
+</style>
 
-[domino_effect]: https://upload.wikimedia.org/wikipedia/commons/7/79/Domino_effect_visualizing_exclusion_of_junk_term_by_induction_axiom.jpg "Domino effect"
+<img class="domino-effect" src="https://upload.wikimedia.org/wikipedia/commons/7/79/Domino_effect_visualizing_exclusion_of_junk_term_by_induction_axiom.jpg" />
+
+## Acknowledgements
+
+* Image courtesy of Jochen Burghardt [CC BY-SA 3.0], from Wikimedia Commons.
 
 ## Contact
 
