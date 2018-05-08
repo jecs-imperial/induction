@@ -16,7 +16,7 @@ The axiom of induction can be stated in plain English thus:
 You can never reach a pathological natural number by starting at zero and counting because, as already stated, no pathological natural number is a successor of any well behaved natural number. So the axiom of induction effectively *rules out* the pathological natural numbers. 
 
 The following is the axiom of induction defined more formally. 
-It is not quite the same as the inference rule that this package derives, there are technical differences. 
+It is not quite the same as the inference rule derived in this package, there are technical differences. 
 It is more what you would find in an introductory text:
 \[
 \left.
