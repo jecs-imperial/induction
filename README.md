@@ -9,31 +9,30 @@ Beside these well behaved natural numbers stands a ring of what might be called 
 None of these pathological natural numbers is a successor of a well behaved natural number. 
 Nonetheless, it is a worthwhile exercise to prove that if we augment the well behaved natural numbers with these pathological natural numbers, the first eight Peano axioms still hold.
 
-The axiom of induction might be defined in plain English thus:
+The axiom of induction can be stated in plain English thus:
 
 *We can reach all the natural numbers by starting at zero and counting.*
 
-So it *rules out* the pathological natural numbers. 
-You can never reach a pathological natural number by starting at zero and counting because, as already stated, no pathological natural number is a successor of any well behaved natural number. 
+You can never reach a pathological natural number by starting at zero and counting because, as already stated, no pathological natural number is a successor of any well behaved natural number. So the axiom of induction effectively *rules out* the pathological natural numbers. 
 
-Here is the axiom of induction defined more formally. 
+The following is the axiom of induction defined more formally. 
 It is not quite the same as the inference rule that this package derives, there are technical differences. 
-Below is more what you would find in an introductory text, but it serves as an illustration:
+It is more what you would find in an introductory text:
 \[
 \left.
 \begin{aligned}
    P(0)& \\
-   \forall{k}P(k)\to{P(k+1)}&
+   \forall{k}\,(P(k)\Rightarrow{P(k+1))}&
 \end{aligned}
 \right\}
 \Rightarrow{\forall{n}P(n)}
 \]
-To see that this more formal definition amounts to the same thing as the plain English definition, take the predicate $P$ to mean "is lightly coloured" and the dominoes to be the natural numbers, of course. 
+To see that this more formal definition amounts to the same thing as the plain English one, take the predicate $P$ to mean "is lightly coloured". 
 Then the above reads:
 
-*"If the first domino is lightly coloured, and, for all dominoes, if the k'th domino being lightly coloured implies that the k+1'th domino is lightly coloured, then both these conditions taken together imply that all the dominoes are lightly coloured."*
+*"If the first domino is lightly coloured, and, for all dominoes, if the k'th domino being lightly coloured implies that the k+1'th domino is lightly coloured, then both of these conditions taken together imply that all the dominoes are lightly coloured."*
 
-Now it should be clear that plain English and more formal definitions amount to the same thing. Both conditions are certainly true, but unless we preclude the darker dominoes, we cannot conclude that all the dominoes are lightly coloured.
+Now it should be clear that the plain English and more formal definitions amount to the same thing. Both conditions are certainly true, but unless we preclude the darker dominoes, we cannot conclude that all the dominoes are lightly coloured.
 
 To continue, the [natural numbers](https://openmathematics.org/#natural-numbers) package gives a standard construction of the well behaved natural numbers. 
 However, we could also, if we chose, construct some additional pathological natural numbers:
@@ -53,12 +52,9 @@ This gives us a ring of sixteen pathological natural numbers, less than the numb
 
 It almost goes without saying, however, that we do not construct these pathological natural numbers under normal circumstances. 
 We just have the lighter dominoes. 
-Now here comes the salient point...it should be possible, therefore, to derive the axiom on induction from the construction of the well behaved natural numbers. 
-Imagine the image below without the darker dominoes. 
-That is what we normally construct. 
-And it should be clear that, without the darker dominoes, the axiom of induction holds.
-
-This is indeed the case, it *is* possible to derive the axiom of induction from a construction of the well-behaved natural numbers, just as it is possible to derive the first eight Peano axioms. 
+And we know that with just the lighter dominoes, the axiom of induction holds.
+It should therefore be possible to derive the axiom on induction from the construction of the well behaved natural numbers. 
+It is indeed possible to do, just as it is possible to derive the first eight Peano axioms. 
 This package contains such a derivation.
 
 <img class="domino-effect" src="https://upload.wikimedia.org/wikipedia/commons/7/79/Domino_effect_visualizing_exclusion_of_junk_term_by_induction_axiom.jpg" alt="Domino effect" />
