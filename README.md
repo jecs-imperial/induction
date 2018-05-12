@@ -57,7 +57,7 @@ It should therefore be possible to derive the axiom on induction from the constr
 It is indeed possible to do, just as it is possible to derive the first eight Peano axioms. 
 This package contains such a derivation.
 
-<img class="domino-effect" src="https://upload.wikimedia.org/wikipedia/commons/7/79/Domino_effect_visualizing_exclusion_of_junk_term_by_induction_axiom.jpg" alt="Domino effect" />
+![domino-effect]
 
 ## Acknowledgements
 
@@ -67,3 +67,6 @@ This package contains such a derivation.
 
 * jecs@imperial.ac.uk
 * http://djalbat.com
+
+[domino-effect]:
+https://upload.wikimedia.org/wikipedia/commons/7/79/Domino_effect_visualizing_exclusion_of_junk_term_by_induction_axiom.jpg
