@@ -18,6 +18,7 @@ You can never reach a pathological natural number by starting at zero and counti
 The following is the axiom of induction defined more formally. 
 It is not quite the same as the inference rule derived in this package, there are technical differences. 
 It is more what you would find in an introductory text:
+
 \[
 \left.
 \begin{aligned}
@@ -27,6 +28,7 @@ It is more what you would find in an introductory text:
 \right\}
 \Rightarrow{\forall{n}P(n)}
 \]
+
 To see that this more formal definition amounts to the same thing as the plain English one, take the predicate $P$ to mean "is lightly coloured". 
 Then the above reads:
 
