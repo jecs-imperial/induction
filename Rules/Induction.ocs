@@ -13,8 +13,8 @@ Rule (Induction)
   Conclusion
     τ(n) ⊢ R(n)::P(n)
   Proof
-    let τ(z)=ρ
-    let τ(s(k))=σ,T(k)::P(k)
+    let τ(z)=R::P(z)
+    let τ(s(k))=T(k)::P(k),S(k)::P(k)=>P(s(k))
     n=z ∨ n=s(k)
     Suppose
       n=z
