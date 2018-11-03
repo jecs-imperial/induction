@@ -4,7 +4,7 @@ A derivation of the axiom of induction for the [Occam](http://djalbat.com/occam)
 
 ## Resources
 
-* [All Natural Numbers are either Even or Odd](http://djalbat.com/annaeeoo.pdf)
+* [All Natural Numbers are either Even or Odd](http://djalbat.com/ANNaeEoO.pdf)
 
 ## Contact
 
