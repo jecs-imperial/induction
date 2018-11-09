@@ -8,5 +8,5 @@ A derivation of the axiom of induction for the [Occam](http://djalbat.com/occam)
 
 ## Contact
 
-* jecs@imperial.ac.uk
+* james.smith@openmathematics.org
 * http://djalbat.com
