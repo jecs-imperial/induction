@@ -1,6 +1,6 @@
 # Induction
 
-A derivation of the principle of induction for the [Occam](http://djalbat.com/occam) proof assistant.
+A derivation of the principle of induction for the [Occam](http://occam.science) proof assistant.
 
 ## Resources
 
