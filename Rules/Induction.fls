@@ -40,13 +40,13 @@ Rule (Induction)
 
 Metatheorem (T(z))
   P(z)
-Proof
-  P(z) from R
+  Proof
+    P(z) from R
 
 Metatheorem (T(s(k)))
   P(s(k))
-Proof
-  P(k) => P(s(k)) from S(k)
-  P(k) from T(k)
-Therefore
-  P(s(k)) by ModusPonens
+  Proof
+    P(k) => P(s(k)) from S(k)
+    P(k) from T(k)
+  Therefore
+    P(s(k)) by ModusPonens
