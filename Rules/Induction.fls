@@ -6,38 +6,6 @@ Variables k,n
 
 Contexts ρ,σ(Nat),τ(Nat)
 
-Rule (Induction)
-  Premises
-    ρ ⊢ R::P(z)
-    σ(k) ⊢ S(k)::P(k) => P(s(k))
-  Conclusion
-    τ(n) ⊢ R(n)::P(n)
-  Proof
-    let τ(z)=R::P(z)
-    let τ(s(k))=T(k)::P(k),S(k)::P(k) => P(s(k))
-    n=z ∨ n=s(k)
-    Suppose
-      n=z
-    Then
-      ρ ⊢ R::P(z)
-      τ(z) ⊢ R::P(z)
-      τ(z) ⊢ T(z)::P(z)
-    Hence
-      τ(n) ⊢ T(n)::P(n)
-    n=z => T(n) ⊢ T(n)::P(n)
-    Suppose
-      n=s(k)
-    Then
-      σ(k) ⊢ S(k)::P(k) => P(s(k))
-      τ(s(k)) ⊢ S(k)::P(k) => P(s(k))
-      τ(s(k)) ⊢ T(k)::P(k)
-      τ(s(k)) ⊢ T(s(k))::P(s(k))
-    Hence
-      τ(n) ⊢ T(n)::P(n)
-    n=s(k) => T(n) ⊢ T(n)::P(n)
-  Therefore
-    τ(n) ⊢ T(n)::P(n) by ProofByCases
-
 Metatheorem (T(z))
   P(z)
   Proof
@@ -50,3 +18,33 @@ Metatheorem (T(s(k)))
     P(k) from T(k)
   Therefore
     P(s(k)) by ModusPonens
+
+Rule (Induction)
+  Premises
+    ρ ⊢ R::P(z)
+    σ(k) ⊢ S(k)::P(k) => P(s(k))
+  Conclusion
+    τ(n) ⊢ T(n)::P(n)
+  Proof
+    let τ(z) = R::P(z)
+    let τ(s(k)) = S(k)::P(k) => P(s(k)), T(k)::P(k)
+    n=z ∨ n=s(k)
+    Suppose
+      n=z
+    Then
+      τ(z) ⊢ R::P(z)
+      τ(z) ⊢ T(z)::P(z)
+    Hence
+      τ(n) ⊢ T(n)::P(n)
+    n=z => T(n) ⊢ T(n)::P(n)
+    Suppose
+      n=s(k)
+    Then
+      τ(s(k)) ⊢ S(k)::P(k) => P(s(k))
+      τ(s(k)) ⊢ T(k)::P(k)
+      τ(s(k)) ⊢ T(s(k))::P(s(k))
+    Hence
+      τ(n) ⊢ T(n)::P(n)
+    n=s(k) => T(n) ⊢ T(n)::P(n)
+  Therefore
+    τ(n) ⊢ T(n)::P(n) by ProofByCases
