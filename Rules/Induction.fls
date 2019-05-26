@@ -32,7 +32,6 @@ Rule (Induction)
     Suppose
       n=z
     Then
-      τ(z) ⊢ R::P(z)
       τ(z) ⊢ T(z)::P(z)
     Hence
       τ(n) ⊢ T(n)::P(n)
@@ -40,8 +39,6 @@ Rule (Induction)
     Suppose
       n=s(k)
     Then
-      τ(s(k)) ⊢ S(k)::P(k) => P(s(k))
-      τ(s(k)) ⊢ T(k)::P(k)
       τ(s(k)) ⊢ T(s(k))::P(s(k))
     Hence
       τ(n) ⊢ T(n)::P(n)
