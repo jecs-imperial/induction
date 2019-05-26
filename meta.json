@@ -1,6 +1,7 @@
 {
   "repository": "https://github.com/jecs-imperial/induction",
   "dependencies": [
-    "natural-numbers"
+    "natural-numbers",
+    "minimal-propositional-logic"
   ]
 }
