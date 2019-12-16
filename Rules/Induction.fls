@@ -1,8 +1,9 @@
-Abbreviations z for zero,s for successor,Nat for NaturalNumber
+Abbreviation Nat for NaturalNumber
+Abbreviations z for zero,s for successor
 
 Metavariables R,S,T(Nat)
 
-Variables k,n
+Variables k,n:Nat
 
 Contexts ρ,σ(Nat),τ(Nat)
 
@@ -21,10 +22,10 @@ Metatheorem (T(s(k)))
 
 Rule (Induction)
   Premises
-    ρ ⊢ R::P(z)
-    σ(k) ⊢ S(k)::P(k) => P(s(k))
+    ρ |- R::P(z)
+    σ(k) |- S(k)::P(k) => P(s(k))
   Conclusion
-    τ(n) ⊢ T(n)::P(n)
+    τ(n) |- T(n)::P(n)
   Proof
     let τ(z) = R::P(z)
     let τ(s(k)) = S(k)::P(k) => P(s(k)), T(k)::P(k)
@@ -32,16 +33,16 @@ Rule (Induction)
     Suppose
       n=z
     Then
-      τ(z) ⊢ T(z)::P(z)
+      τ(z) |- T(z)::P(z)
     Hence
-      τ(n) ⊢ T(n)::P(n)
-    n=z => T(n) ⊢ T(n)::P(n)
+      τ(n) |- T(n)::P(n)
+    n=z => T(n) |- T(n)::P(n)
     Suppose
       n=s(k)
     Then
-      τ(s(k)) ⊢ T(s(k))::P(s(k))
+      τ(s(k)) |- T(s(k))::P(s(k))
     Hence
-      τ(n) ⊢ T(n)::P(n)
-    n=s(k) => T(n) ⊢ T(n)::P(n)
+      τ(n) |- T(n)::P(n)
+    n=s(k) => T(n) |- T(n)::P(n)
   Therefore
-    τ(n) ⊢ T(n)::P(n) by ProofByCases
+    τ(n) |- T(n)::P(n) by ProofByCases
