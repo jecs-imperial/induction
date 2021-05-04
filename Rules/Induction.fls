@@ -1,18 +1,17 @@
 Abbreviation Nat for NaturalNumber
 Abbreviations z for zero,s for successor
 
-Metavariables R,S,T(Nat)
+Metavariables R,S,T(Nat) : Statement
+Metavariables ρ,σ(Nat),τ(Nat) : Context
 
 Variables k,n:Nat
 
-Contexts ρ,σ(Nat),τ(Nat)
-
-Metatheorem (T(z))
+Metatheorem (T(zero))
   P(z)
   Proof
     P(z) from R
 
-Metatheorem (T(s(k)))
+Metatheorem (T(successor(k)))
   P(s(k))
   Proof
     P(k) from T(k)
@@ -27,8 +26,8 @@ Rule (Induction)
   Conclusion
     τ(n) |- T(n)::P(n)
   Proof
-    let τ(z) = R::P(z)
-    let τ(s(k)) = S(k)::P(k) => P(s(k)), T(k)::P(k)
+    Let τ(z) = R::P(z)
+    Let τ(s(k)) = S(k)::P(k) => P(s(k)), T(k)::P(k)
     n=z ∨ n=s(k)
     Suppose
       n=z
